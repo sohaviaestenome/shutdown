@@ -36,6 +36,7 @@ public class ShutdownController {
 
     @FXML
     private void handleShutdown(ActionEvent event) {
+        System.out.println("Shutdown button clicked.");
         int time = spinner.getValue();
         if (toggleButton.isSelected()) {
             // Convert hours to seconds
@@ -72,6 +73,7 @@ public class ShutdownController {
 
     @FXML
     private void handleToggle(ActionEvent event) {
+        System.out.println("Toggle button clicked.");
         if (toggleButton.isSelected()) {
             // Set the Spinner value factory to use hours instead of minutes
             spinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23));
