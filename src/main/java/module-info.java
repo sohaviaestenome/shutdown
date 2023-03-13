@@ -11,7 +11,6 @@ module com.shutdown {
 
     requires com.almasb.fxgl.all;
 
-
     opens com.shutdown to javafx.fxml;
     exports com.shutdown;
 }

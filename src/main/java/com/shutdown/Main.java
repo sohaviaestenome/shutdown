@@ -13,7 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         // Load the main FXML file
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/main.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/shutdown/view/main.fxml"));
         Parent root = loader.load();
 
         // Set the controller for the main FXML file
@@ -27,6 +27,7 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
+        System.out.println("Starting application...");
         launch(args);
     }
 }
